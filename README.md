@@ -1,145 +1,146 @@
-<<<<<<< Updated upstream
-# FraudShield – Credit Card Fraud Detection System
+# 🛡️ FraudShield - Advanced Credit Card Fraud Detection System
 
 <div align="center">
 
-## MSc Advanced Machine Learning Project
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![License](https://img.shields.io/badge/License-Academic-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-**An Intelligent Credit Card Fraud Detection System Using Machine Learning and SMOTE**
+### MSc Advanced Machine Learning Project
 
-<img src="favicon.png" alt="FraudShield Logo" width="220">
+**An Explainable AI-Powered Credit Card Fraud Detection System Using Machine Learning and SMOTE**
+
+<img src="favicon.png" width="180">
 
 </div>
 
 ---
 
-# Overview
+# 📖 Overview
 
-FraudShield is a machine learning-based application developed to identify fraudulent credit card transactions. The project addresses one of the major challenges in fraud detection—**highly imbalanced datasets**—by applying the Synthetic Minority Over-sampling Technique (SMOTE) together with supervised machine learning algorithms.
+FraudShield is an enterprise-grade machine learning application designed to detect fraudulent credit card transactions with high accuracy.
 
-The system provides an interactive web application developed using **Streamlit**, enabling users to explore the dataset, train machine learning models, evaluate model performance, and predict the likelihood of fraudulent transactions in real time.
+The project addresses one of the biggest challenges in fraud detection—**extreme class imbalance**—by applying the **Synthetic Minority Over-sampling Technique (SMOTE)** alongside advanced supervised learning algorithms.
 
-This project was completed as part of the **MSc Advanced Machine Learning** programme and demonstrates the practical application of machine learning techniques in financial risk management.
+The application enables users to:
 
----
+- Explore the dataset
+- Train multiple ML models
+- Compare model performance
+- Perform real-time fraud prediction
+- Visualize evaluation metrics
+- Interpret predictions using Explainable AI
 
-# Project Objectives
-
-The primary objectives of this project are to:
-
-- Develop a machine learning solution for detecting fraudulent credit card transactions.
-- Address class imbalance using SMOTE.
-- Compare the performance of multiple classification algorithms.
-- Evaluate models using metrics suitable for imbalanced classification problems.
-- Provide an interactive interface for model training and fraud prediction.
-- Demonstrate best practices in machine learning model development and evaluation.
+The system is deployed as an interactive **Streamlit web application**.
 
 ---
 
-# Key Features
+# 🌐 Live Demo
 
-- Interactive web application built with Streamlit
-- Automated data preprocessing and feature scaling
-- Class imbalance handling using SMOTE
-- Multiple machine learning classification models
-- Real-time fraud prediction
-- Model comparison dashboard
-- Exploratory Data Analysis (EDA)
-- Performance evaluation using appropriate classification metrics
-- Confusion Matrix and ROC Curve visualisation
-- Overfitting diagnostics and model comparison
+**Application**
+
+https://fraud-shield-s25026203.streamlit.app
+
+**GitHub Repository**
+
+https://github.com/RoshanP2026/Fraud-Shield
 
 ---
 
-# Machine Learning Workflow
+# ✨ Key Features
 
-The project follows a complete machine learning pipeline consisting of:
-
-1. Data Loading
-2. Data Cleaning
-3. Exploratory Data Analysis (EDA)
-4. Feature Scaling
-5. Train-Test Split
-6. SMOTE Oversampling (Training Set Only)
-7. Model Training
-8. Model Evaluation
-9. Fraud Prediction
-10. Performance Analysis
+- Interactive Streamlit Dashboard
+- Credit Card Fraud Detection
+- Multiple Machine Learning Models
+- SMOTE Class Balancing
+- Hyperparameter Tuning
+- Feature Scaling
+- Model Comparison Dashboard
+- Exploratory Data Analysis
+- Real-Time Prediction
+- Explainable AI (SHAP Ready)
+- Confusion Matrix
+- ROC Curve
+- Precision-Recall Curve
+- Overfitting Detection
+- Cross Validation
+- Model Persistence
 
 ---
 
-# Project Structure
-=======
-# FraudShield - Advanced Credit Card Fraud Detection System
+# 🧠 Machine Learning Pipeline
 
-<div align="center">
-  <h3>MSc Advanced Machine Learning Project</h3>
-  <p>Enterprise-grade real-time fraud detection with Explainable AI and Advanced ML Techniques</p>
-</div>
+```
+Dataset
+    │
+    ▼
+Data Cleaning
+    │
+    ▼
+Exploratory Data Analysis
+    │
+    ▼
+Feature Engineering
+    │
+    ▼
+Feature Scaling
+    │
+    ▼
+Train/Test Split
+    │
+    ▼
+SMOTE Oversampling
+    │
+    ▼
+Model Training
+    │
+    ▼
+Model Evaluation
+    │
+    ▼
+Fraud Prediction
+    │
+    ▼
+Streamlit Dashboard
+```
 
-## 🎯 Overview
+---
 
-FraudShield is a comprehensive, enterprise-grade credit card fraud detection system that addresses the challenge of severe class imbalance in financial transaction data. The system implements state-of-the-art machine learning techniques including multiple algorithms, hyperparameter tuning, explainable AI (SHAP), and comprehensive evaluation metrics optimized for imbalanced datasets.
-
-## ✨ Key Features
-
-### Machine Learning Capabilities
-- **Multiple ML Models**: Logistic Regression, Decision Tree, Random Forest, Balanced Random Forest, XGBoost, LightGBM, Gradient Boosting, Neural Network (MLP)
-- **Hyperparameter Tuning**: GridSearchCV and RandomizedSearchCV with before/after comparison
-- **Class Imbalance Handling**: SMOTE, Random Under Sampling, Balanced Random Forest, Class Weights
-- **Cross-Validation**: 5-fold and 10-fold CV with mean accuracy and standard deviation
-- **Feature Engineering**: Transaction velocity, risk scores, interaction features, time-based features
-
-### Explainable AI
-- **SHAP Integration**: Feature attribution and model interpretability
-- **Individual Prediction Explanations**: Understand why specific transactions are flagged
-- **Summary Plots**: Global feature importance visualization
-- **Dependence Plots**: Feature interaction analysis
-
-### System Features
-- **ML Pipeline**: End-to-end pipeline (Cleaning → Encoding → Scaling → Feature Engineering → Training → Evaluation → Deployment)
-- **Real-time Prediction**: Interactive transaction risk evaluation with scenario templates
-- **Comprehensive Logging**: Prediction logs with timestamps, probabilities, and audit trail
-- **Model Persistence**: joblib/pickle for production-ready model saving/loading
-
-### Visualization & Analytics
-- **Professional Dashboard**: Streamlit-based with multiple tabs (Home, Predict, Analytics, Model Performance, Error Analysis, About)
-- **Advanced Visualizations**: ROC curves, Precision-Recall curves, confusion matrices, correlation heatmaps
-- **Error Analysis**: False positive/negative analysis with explanations
-- **Probability Gauges**: Visual confidence intervals and risk indicators
-
-## 📁 Project Structure
->>>>>>> Stashed changes
+# 📂 Project Structure
 
 ```
 FraudShield/
+
 │
 ├── CreditCardFraudDetection/
-<<<<<<< Updated upstream
 │   ├── app.py
 │   ├── train_model.py
 │   ├── utils.py
 │   ├── notebook.ipynb
 │   ├── requirements.txt
-│   ├── logo.jpg
 │   ├── banner.jpg
+│   ├── logo.jpg
 │   └── favicon.png
 │
+├── dataset/
+├── models/
+├── screenshots/
 ├── README.md
 ├── .gitignore
-├── install_and_run.sh
-└── favicon.png
+└── install_and_run.sh
 ```
 
 ---
 
-# Technologies Used
+# ⚙️ Technologies Used
 
 ## Programming Language
 
 - Python 3.10+
 
-## Machine Learning Libraries
+## Machine Learning
 
 - Scikit-learn
 - Imbalanced-learn (SMOTE)
@@ -147,339 +148,231 @@ FraudShield/
 - NumPy
 - Pandas
 
-## Data Visualisation
+## Data Visualization
 
 - Matplotlib
-- Seaborn
 - Plotly
+- Seaborn
 
-## Web Application
+## Web Framework
 
 - Streamlit
 
 ---
 
-# Dataset
+# 📊 Dataset
 
-The project uses a credit card transaction dataset containing both legitimate and fraudulent transactions.
+The project uses a real-world credit card transaction dataset consisting of:
 
-The dataset consists of:
+- Time
+- Amount
+- PCA Features (V1 – V28)
+- Class
 
-- **Time** – Time elapsed since the first transaction
-- **Amount** – Transaction value
-- **V1–V28** – PCA-transformed features
-- **Class**
-  - 0 = Legitimate Transaction
-  - 1 = Fraudulent Transaction
+Where
 
-Because fraudulent transactions represent only a very small proportion of the data, the dataset is highly imbalanced, making fraud detection a challenging classification problem.
+- **0 → Legitimate Transaction**
+- **1 → Fraudulent Transaction**
 
----
-
-# Data Pre-processing
-
-The following preprocessing steps are performed before model training:
-
-- Missing value validation
-- Feature scaling
-- Train-test split
-- Class imbalance analysis
-- SMOTE oversampling (training data only)
-
-Applying SMOTE exclusively to the training dataset prevents information leakage and ensures that the evaluation metrics remain reliable.
+Only around **0.17%** of the transactions are fraudulent, making this a highly imbalanced classification problem.
 
 ---
 
-# Machine Learning Models
+# ⚖️ Why SMOTE?
 
-The following supervised learning algorithms are implemented:
+Fraud datasets are naturally imbalanced.
+
+Without balancing:
+
+- The model becomes biased toward legitimate transactions.
+- Fraudulent transactions are often ignored.
+
+FraudShield applies **SMOTE** only to the **training dataset** after the train-test split to prevent data leakage while improving minority-class detection.
+
+---
+
+# 🤖 Machine Learning Models
+
+The project compares several supervised learning algorithms.
 
 - Logistic Regression
-- Random Forest Classifier
+- Decision Tree
+- Random Forest
 - Gradient Boosting
-- XGBoost (optional)
+- XGBoost
 
-Each model is trained using identical training data and evaluated using the same testing dataset to allow a fair performance comparison.
+Each model is trained using identical preprocessing steps to ensure a fair comparison.
 
 ---
 
-# Model Evaluation
+# 📈 Model Evaluation Metrics
 
-Since fraud detection is an imbalanced classification problem, model evaluation extends beyond overall accuracy.
+Fraud detection requires more than simple accuracy.
 
-The following performance metrics are used:
+The following metrics are used:
 
 - Accuracy
 - Precision
 - Recall
-- F1-Score
-- ROC-AUC Score
-- Precision-Recall Curve
+- F1 Score
+- ROC-AUC
+- Precision-Recall AUC
 - Confusion Matrix
 
-Special attention is given to **Recall**, as correctly identifying fraudulent transactions is generally more important than maximising overall accuracy.
+Special emphasis is placed on **Recall**, since missing fraudulent transactions can lead to significant financial losses.
 
 ---
 
-# Application Modules
+# 📋 Example Performance
 
-The Streamlit application includes the following modules:
+| Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|--------|----------|-----------|--------|----------|---------|
+| Logistic Regression | XX% | XX% | XX% | XX% | XX% |
+| Random Forest | XX% | XX% | XX% | XX% | XX% |
+| Gradient Boosting | XX% | XX% | XX% | XX% | XX% |
+| XGBoost | XX% | XX% | XX% | XX% | XX% |
 
-### Home
-
-Provides an overview of the project and key statistics.
-
-### Dataset Explorer
-
-Allows users to inspect the dataset interactively.
-
-### Exploratory Data Analysis
-
-Visualises transaction distributions, feature relationships, and fraud patterns.
-
-### Model Training
-
-Enables users to train different machine learning models and compare their performance.
-
-### Prediction System
-
-Allows users to enter transaction information and receive an instant fraud prediction.
-
-### Performance Analytics
-
-Displays evaluation metrics, ROC curves, confusion matrices, and model comparisons.
-
-### About & Diagnostics
-
-Provides project information together with overfitting analysis and diagnostic reports.
+*(Replace with your actual results.)*
 
 ---
 
-# Installation
+# 💻 Application Modules
 
-Clone the repository:
+## 🏠 Home
 
-=======
-│   ├── app.py                  # Main Streamlit application (original)
-│   ├── app_enhanced.py         # Enhanced Streamlit application with all features
-│   ├── utils.py                # Utility functions for data processing and visualization
-│   ├── train_model.py          # Original ML training pipeline
-│   ├── requirements.txt        # Python dependencies
-│   ├── notebook.ipynb          # Jupyter notebook for analysis
-│   ├── logo.jpg                # Application logo
-│   ├── banner.jpg              # Application banner
-│   ├── favicon.png             # Favicon
-│   ├── model.pkl               # Trained model
-│   └── scaler.pkl              # Fitted scaler
-├── dataset/                    # Dataset directory
-├── models/                     # Saved models directory
-├── images/                     # Images directory
-├── notebooks/                  # Jupyter notebooks directory
-├── saved_models/               # Production-ready saved models
-├── logs/                       # Prediction and audit logs
-├── train.py                    # Advanced training module with multiple models
-├── explainability.py           # SHAP-based explainable AI module
-├── feature_engineering.py      # Advanced feature engineering module
-├── pipeline.py                 # End-to-end ML pipeline module
-├── logger.py                   # Logging and audit trail module
-├── requirements.txt            # Complete dependencies
-├── README.md                   # This file
-├── .gitignore                  # Git ignore rules
-└── install_and_run.sh          # Installation and run script
-```
+Project overview and dashboard.
 
-## 🚀 Installation
+## 📊 Dataset Explorer
 
-### Prerequisites
-- Python 3.10 or higher
-- pip (Python package manager)
-- Git (for cloning the repository)
+Interactive dataset inspection.
 
-### Option 1: Using the installation script (Linux/Mac/WSL)
->>>>>>> Stashed changes
+## 📈 Exploratory Data Analysis
+
+Visualizations and fraud statistics.
+
+## 🤖 Model Training
+
+Train and compare machine learning models.
+
+## 🔍 Prediction
+
+Predict whether a transaction is fraudulent.
+
+## 📉 Performance Dashboard
+
+Confusion Matrix
+
+ROC Curve
+
+Precision-Recall Curve
+
+Classification Report
+
+## ℹ️ About
+
+Project information and technical details.
+
+---
+
+# 🚀 Installation
+
+Clone the repository
+
 ```bash
 git clone https://github.com/RoshanP2026/Fraud-Shield.git
 ```
 
-Navigate into the project directory:
+Navigate to the project
 
 ```bash
 cd Fraud-Shield
 ```
 
-Create a virtual environment:
+Create a virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate the virtual environment.
+Activate it
 
-Windows:
+Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-Linux/macOS:
+Linux/macOS
 
 ```bash
 source venv/bin/activate
 ```
 
-Install the required packages:
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-<<<<<<< Updated upstream
 ---
 
-# Running the Application
+# ▶️ Running the Application
 
-Launch the Streamlit application:
+Launch Streamlit
 
-=======
-4. **Train models** (optional - will use fallback if not trained)
-```bash
-python train.py
-```
-
-## 🎮 Running the Application
-
-### Enhanced Dashboard (Recommended)
-```bash
-streamlit run CreditCardFraudDetection/app_enhanced.py
-```
-
-### Original Dashboard
->>>>>>> Stashed changes
 ```bash
 streamlit run CreditCardFraudDetection/app.py
 ```
 
-The application will be available at:
+The application will be available at
 
-<<<<<<< Updated upstream
 ```
 http://localhost:8501
 ```
 
 ---
 
-# Troubleshooting
-=======
-## 📊 Application Pages
+# 🛠 Troubleshooting
 
-### Enhanced Dashboard Pages
-1. **🏠 Home**: System overview, dashboard statistics, and recent activity
-2. **🔮 Predict**: Real-time transaction prediction with SHAP explanations and probability gauges
-3. **📊 Analytics**: Comprehensive EDA with distribution analysis, correlation, and feature separation
-4. **🎯 Model Performance**: ROC curves, PR curves, confusion matrices, and classification reports
-5. **🔬 Error Analysis**: False positive/negative analysis with detailed explanations
-6. **ℹ️ About & Diagnostics**: System architecture, developer profile, and technical specifications
+## Missing Model Files
 
-### Training Module Features
-Run `python train.py` to access:
-- Multiple model training with comparison tables
-- Hyperparameter tuning with before/after metrics
-- Class imbalance technique comparison
-- Cross-validation analysis
-- Automatic model saving
-
-## 📈 Dataset
->>>>>>> Stashed changes
-
-### Missing Model Files
-
-If the trained model files are unavailable, regenerate them using:
-
-<<<<<<< Updated upstream
-=======
-## 🎯 Model Performance Metrics
-
-The system evaluates models using metrics optimized for imbalanced datasets:
-- **Accuracy**: Overall classification accuracy
-- **Precision**: Minimizes false alarms
-- **Recall**: Maximizes fraud detection
-- **F1-Score**: Harmonic mean of precision and recall
-- **ROC-AUC**: Overall classification performance
-- **Precision-Recall AUC**: Performance on minority class
-
-## 🔬 Academic Context
-
-This project was developed as part of an MSc Advanced Machine Learning curriculum focusing on:
-- Class imbalance handling techniques (SMOTE, undersampling, class weights)
-- Ensemble learning methods (Random Forest, XGBoost, LightGBM)
-- Hyperparameter optimization (GridSearchCV, RandomizedSearchCV)
-- Model explainability (SHAP)
-- Model evaluation in imbalanced scenarios
-- Overfitting detection and prevention
-- Feature engineering for fraud detection
-- End-to-end ML pipeline development
-
-**Important Note**: SMOTE is applied ONLY to the training set to prevent test set contamination and ensure valid performance metrics.
-
-## 👨‍💻 Developer
-
-- **Name**: Roshan Perera
-- **Student ID**: S25026203
-- **Program**: MSc Advanced Machine Learning & Financial Risk Mitigation
-
-## 🛠️ Troubleshooting
-
-### Model files not found
-If you see errors about missing model files:
->>>>>>> Stashed changes
-```bash
-python train.py
-```
-
----
-
-### Port Already in Use
-
-Run the application on another port:
+Retrain the model
 
 ```bash
-streamlit run CreditCardFraudDetection/app_enhanced.py --server.port 8502
+python train_model.py
 ```
 
----
+## Port Already in Use
 
-### Dependency Issues
+```bash
+streamlit run CreditCardFraudDetection/app.py --server.port 8502
+```
 
-Upgrade pip and reinstall the required packages:
+## Dependency Issues
 
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt --force-reinstall
 ```
 
-<<<<<<< Updated upstream
 ---
-=======
-## 📝 License
->>>>>>> Stashed changes
 
-# Future Enhancements
+# 🔮 Future Improvements
 
-<<<<<<< Updated upstream
-Possible future improvements include:
-
-- Deep learning models for fraud detection
-- Real-time transaction streaming
-- REST API deployment
-- Docker containerisation
-- Cloud deployment using AWS or Azure
-- Automated hyperparameter optimisation
-- Explainable AI (SHAP/LIME)
-- Continuous model retraining
+- Deep Learning Models
+- LSTM Fraud Detection
+- Explainable AI Dashboard
+- REST API
+- Docker Deployment
+- Kubernetes Support
+- AWS Cloud Deployment
+- Real-Time Transaction Streaming
+- Continuous Model Retraining
+- AutoML Integration
 
 ---
 
-# Author
+# 👨‍💻 Author
 
 **Roshan Perera**
 
@@ -487,28 +380,29 @@ Possible future improvements include:
 
 ---
 
-# Acknowledgements
+# 🙏 Acknowledgements
 
-This project makes use of the following open-source libraries:
+This project was developed using the following open-source technologies:
 
 - Scikit-learn
-- Imbalanced-learn
 - Streamlit
+- Imbalanced-learn
+- XGBoost
 - Pandas
 - NumPy
 - Matplotlib
 - Plotly
-- XGBoost
+- Seaborn
 
-The project is inspired by the structure of the publicly available Credit Card Fraud Detection dataset originally published on Kaggle.
+Special thanks to the open-source community for providing the tools and resources that made this project possible.
 
 ---
 
-# License
+# 📄 License
 
-This repository has been developed solely for academic purposes as part of an MSc programme.
+This project has been developed solely for academic purposes as part of an MSc programme.
 
-It may be used for learning and research with appropriate acknowledgement to the author.
+It may be used for learning and research with appropriate acknowledgment to the author.
 
 ---
 
@@ -519,20 +413,3 @@ It may be used for learning and research with appropriate acknowledgement to the
 *Machine Learning for Intelligent Credit Card Fraud Detection*
 
 </div>
-=======
-## 🙏 Acknowledgments
-
-- Kaggle Credit Card Fraud Dataset (original dataset structure reference)
-- scikit-learn, imbalanced-learn, XGBoost, LightGBM, SHAP, and Streamlit communities
-- Open-source ML ecosystem contributors
-
-## 📚 Key Technologies
-
-- **ML Frameworks**: scikit-learn, XGBoost, LightGBM, PyTorch
-- **Data Processing**: pandas, numpy
-- **Explainability**: SHAP
-- **Visualization**: plotly, matplotlib, seaborn
-- **Web Framework**: Streamlit
-- **Imbalance Handling**: imbalanced-learn (SMOTE)
-- **Optimization**: Optuna, scikit-optimize
->>>>>>> Stashed changes
