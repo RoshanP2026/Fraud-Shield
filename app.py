@@ -540,12 +540,12 @@ elif page == "Analytics":
         st.markdown("### Advanced Analytics")
         st.subheader("Class Distribution")
         class_counts = df['Class'].value_counts()
-        fig_pie = go.Figure(data=[go.Pie(
+        fig_pie = go.Figure(data=[go.Pie()])
             labels=['Legitimate', 'Fraudulent'],
             values=[class_counts[0], class_counts[1]],
             hole=.4,
             marker_colors=['#34D399', '#F87171']
-        )]).
+            
         fig_pie.update_layout(title="Class Distribution")
         st.plotly_chart(fig_pie, use_container_width=True)
 
