@@ -1,261 +1,360 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# FraudShield - Advanced Credit Card Fraud Detection System
+# FraudShield – Credit Card Fraud Detection System
 
 <div align="center">
-  <h3>MSc Advanced Machine Learning Project</h3>
-  <p>Real-time fraud detection using Machine Learning with SMOTE and ensemble methods</p>
+
+## MSc Advanced Machine Learning Project
+
+**An Intelligent Credit Card Fraud Detection System Using Machine Learning and SMOTE**
+
+<img src="favicon.png" alt="FraudShield Logo" width="220">
+
 </div>
 
-## Overview
+---
 
-FraudShield is a comprehensive credit card fraud detection system that addresses the challenge of severe class imbalance in financial transaction data. The system uses advanced ML techniques including SMOTE (Synthetic Minority Over-sampling Technique), multiple classifier models, and rigorous evaluation metrics optimized for imbalanced datasets.
+# Overview
 
-### Key Features
+FraudShield is a machine learning-based application developed to identify fraudulent credit card transactions. The project addresses one of the major challenges in fraud detection—**highly imbalanced datasets**—by applying the Synthetic Minority Over-sampling Technique (SMOTE) together with supervised machine learning algorithms.
 
-- **Interactive Web Interface**: Built with Streamlit for real-time fraud prediction and analysis
-- **Multiple ML Models**: Logistic Regression, Random Forest, and XGBoost/Gradient Boosting
-- **SMOTE Integration**: Handles class imbalance through synthetic oversampling
-- **Comprehensive Analytics**: ROC curves, Precision-Recall curves, confusion matrices, and feature analysis
-- **Real-time Prediction**: Interactive transaction risk evaluation with scenario templates
-- **Academic Diagnostics**: Overfitting analysis and model performance metrics
+The system provides an interactive web application developed using **Streamlit**, enabling users to explore the dataset, train machine learning models, evaluate model performance, and predict the likelihood of fraudulent transactions in real time.
 
-## Project Structure
+This project was completed as part of the **MSc Advanced Machine Learning** programme and demonstrates the practical application of machine learning techniques in financial risk management.
+
+---
+
+# Project Objectives
+
+The primary objectives of this project are to:
+
+- Develop a machine learning solution for detecting fraudulent credit card transactions.
+- Address class imbalance using SMOTE.
+- Compare the performance of multiple classification algorithms.
+- Evaluate models using metrics suitable for imbalanced classification problems.
+- Provide an interactive interface for model training and fraud prediction.
+- Demonstrate best practices in machine learning model development and evaluation.
+
+---
+
+# Key Features
+
+- Interactive web application built with Streamlit
+- Automated data preprocessing and feature scaling
+- Class imbalance handling using SMOTE
+- Multiple machine learning classification models
+- Real-time fraud prediction
+- Model comparison dashboard
+- Exploratory Data Analysis (EDA)
+- Performance evaluation using appropriate classification metrics
+- Confusion Matrix and ROC Curve visualisation
+- Overfitting diagnostics and model comparison
+
+---
+
+# Machine Learning Workflow
+
+The project follows a complete machine learning pipeline consisting of:
+
+1. Data Loading
+2. Data Cleaning
+3. Exploratory Data Analysis (EDA)
+4. Feature Scaling
+5. Train-Test Split
+6. SMOTE Oversampling (Training Set Only)
+7. Model Training
+8. Model Evaluation
+9. Fraud Prediction
+10. Performance Analysis
+
+---
+
+# Project Structure
 
 ```
 FraudShield/
+│
 ├── CreditCardFraudDetection/
-│   ├── app.py              # Main Streamlit application
-│   ├── utils.py            # Utility functions for data processing and visualization
-│   ├── train_model.py      # ML training pipeline script
-│   ├── requirements.txt    # Python dependencies
-│   ├── notebook.ipynb      # Jupyter notebook for analysis
-│   ├── logo.jpg            # Application logo
-│   ├── banner.jpg          # Application banner
-│   └── favicon.png         # Favicon
-├── README.md               # This file
-├── .gitignore              # Git ignore rules
-└── install_and_run.sh      # Installation and run script
+│   ├── app.py
+│   ├── train_model.py
+│   ├── utils.py
+│   ├── notebook.ipynb
+│   ├── requirements.txt
+│   ├── logo.jpg
+│   ├── banner.jpg
+│   └── favicon.png
+│
+├── README.md
+├── .gitignore
+├── install_and_run.sh
+└── favicon.png
 ```
 
-## Prerequisites
+---
 
-- Python 3.10 or higher
-- pip (Python package manager)
-- Git (for cloning the repository)
+# Technologies Used
 
-## Installation
+## Programming Language
 
-### Option 1: Using the installation script (Linux/Mac/WSL)
+- Python 3.10+
+
+## Machine Learning Libraries
+
+- Scikit-learn
+- Imbalanced-learn (SMOTE)
+- XGBoost
+- NumPy
+- Pandas
+
+## Data Visualisation
+
+- Matplotlib
+- Seaborn
+- Plotly
+
+## Web Application
+
+- Streamlit
+
+---
+
+# Dataset
+
+The project uses a credit card transaction dataset containing both legitimate and fraudulent transactions.
+
+The dataset consists of:
+
+- **Time** – Time elapsed since the first transaction
+- **Amount** – Transaction value
+- **V1–V28** – PCA-transformed features
+- **Class**
+  - 0 = Legitimate Transaction
+  - 1 = Fraudulent Transaction
+
+Because fraudulent transactions represent only a very small proportion of the data, the dataset is highly imbalanced, making fraud detection a challenging classification problem.
+
+---
+
+# Data Pre-processing
+
+The following preprocessing steps are performed before model training:
+
+- Missing value validation
+- Feature scaling
+- Train-test split
+- Class imbalance analysis
+- SMOTE oversampling (training data only)
+
+Applying SMOTE exclusively to the training dataset prevents information leakage and ensures that the evaluation metrics remain reliable.
+
+---
+
+# Machine Learning Models
+
+The following supervised learning algorithms are implemented:
+
+- Logistic Regression
+- Random Forest Classifier
+- Gradient Boosting
+- XGBoost (optional)
+
+Each model is trained using identical training data and evaluated using the same testing dataset to allow a fair performance comparison.
+
+---
+
+# Model Evaluation
+
+Since fraud detection is an imbalanced classification problem, model evaluation extends beyond overall accuracy.
+
+The following performance metrics are used:
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- ROC-AUC Score
+- Precision-Recall Curve
+- Confusion Matrix
+
+Special attention is given to **Recall**, as correctly identifying fraudulent transactions is generally more important than maximising overall accuracy.
+
+---
+
+# Application Modules
+
+The Streamlit application includes the following modules:
+
+### Home
+
+Provides an overview of the project and key statistics.
+
+### Dataset Explorer
+
+Allows users to inspect the dataset interactively.
+
+### Exploratory Data Analysis
+
+Visualises transaction distributions, feature relationships, and fraud patterns.
+
+### Model Training
+
+Enables users to train different machine learning models and compare their performance.
+
+### Prediction System
+
+Allows users to enter transaction information and receive an instant fraud prediction.
+
+### Performance Analytics
+
+Displays evaluation metrics, ROC curves, confusion matrices, and model comparisons.
+
+### About & Diagnostics
+
+Provides project information together with overfitting analysis and diagnostic reports.
+
+---
+
+# Installation
+
+Clone the repository:
 
 ```bash
-chmod +x install_and_run.sh
-./install_and_run.sh
+git clone https://github.com/RoshanP2026/Fraud-Shield.git
 ```
 
-### Option 2: Manual installation
+Navigate into the project directory:
 
-1. **Clone the repository**
 ```bash
-git clone <your-repository-url>
-cd FraudShield
+cd Fraud-Shield
 ```
 
-2. **Create a virtual environment** (recommended)
+Create a virtual environment:
+
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. **Install dependencies**
+Activate the virtual environment.
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Linux/macOS:
+
+```bash
+source venv/bin/activate
+```
+
+Install the required packages:
+
 ```bash
 pip install -r CreditCardFraudDetection/requirements.txt
 ```
 
-4. **Train the initial model** (optional - will be done automatically on first run)
-```bash
-python CreditCardFraudDetection/train_model.py
-```
+---
 
-## Running the Application
+# Running the Application
 
-### Using the installation script
-```bash
-./install_and_run.sh
-```
+Launch the Streamlit application:
 
-### Manual execution
 ```bash
 streamlit run CreditCardFraudDetection/app.py
 ```
 
-The application will start and be available at `http://localhost:8501`
+The application will be available at:
 
-## Application Pages
+```
+http://localhost:8501
+```
 
-1. **Home**: System overview and dashboard with key statistics
-2. **Dataset Explorer**: Interactive data inspection and analysis
-3. **Exploratory Data Analysis**: Visualizations for amount, time, and feature distributions
-4. **Model Training**: Train and optimize ML models with custom parameters
-5. **Prediction System**: Real-time transaction fraud risk evaluation
-6. **Performance Analytics**: Comprehensive model performance metrics and visualizations
-7. **About & Diagnostics**: System information and academic analysis
+---
 
-## Dataset
+# Troubleshooting
 
-The system uses a synthetic credit card fraud dataset that mimics the Kaggle Credit Card Fraud dataset structure:
-- **Time**: Seconds elapsed since the first transaction
-- **V1-V28**: PCA-transformed features (principal components)
-- **Amount**: Transaction amount
-- **Class**: Target variable (0 = Legitimate, 1 = Fraudulent)
+### Missing Model Files
 
-The dataset is automatically generated on first run if not present.
+If the trained model files are unavailable, regenerate them using:
 
-## Model Performance
-
-The system evaluates models using metrics optimized for imbalanced datasets:
-- **Precision**: Minimizes false alarms
-- **Recall**: Maximizes fraud detection
-- **F1-Score**: Harmonic mean of precision and recall
-- **ROC-AUC**: Overall classification performance
-- **Precision-Recall AUC**: Performance on minority class
-
-## Academic Context
-
-This project was developed as part of an MSc Advanced Machine Learning curriculum focusing on:
-- Class imbalance handling techniques
-- Ensemble learning methods
-- Model evaluation in imbalanced scenarios
-- Overfitting detection and prevention
-
-**Important Note**: SMOTE is applied ONLY to the training set to prevent test set contamination and ensure valid performance metrics.
-
-## Developer
-
-- **Name**: Roshan Perera
-- **Student ID**: S25026203
-- **Program**: MSc Advanced Machine Learning & Financial Risk Mitigation
-
-## Troubleshooting
-
-### Model files not found
-If you see errors about missing model.pkl or scaler.pkl files:
 ```bash
 python CreditCardFraudDetection/train_model.py
 ```
 
-### Port already in use
-If port 8501 is in use, specify a different port:
+---
+
+### Port Already in Use
+
+Run the application on another port:
+
 ```bash
 streamlit run CreditCardFraudDetection/app.py --server.port 8502
 ```
 
-### Dependency issues
-Ensure you have the latest pip and try:
+---
+
+### Dependency Issues
+
+Upgrade pip and reinstall the required packages:
+
 ```bash
 pip install --upgrade pip
 pip install -r CreditCardFraudDetection/requirements.txt --force-reinstall
 ```
 
-## License
+---
 
-This project is submitted as part of academic coursework. Please contact the author for usage permissions.
+# Future Enhancements
 
-## Acknowledgments
+Possible future improvements include:
 
-- Kaggle Credit Card Fraud Dataset (original dataset structure reference)
-- scikit-learn, imbalanced-learn, and Streamlit communities
-=======
-# CreditCardFraudDetector_test
-Check121tst
->>>>>>> 3b0dca6e0592a9191d4db0e165d202656840b37d
-=======
-### Fraud-Shield — Credit Card Fraud Detection System
+- Deep learning models for fraud detection
+- Real-time transaction streaming
+- REST API deployment
+- Docker containerisation
+- Cloud deployment using AWS or Azure
+- Automated hyperparameter optimisation
+- Explainable AI (SHAP/LIME)
+- Continuous model retraining
 
-Fraud-Shield is a machine learning project that detects fraudulent credit card transactions using classification algorithms. The goal is to improve transaction security by identifying suspicious activities with high accuracy and recall.
+---
 
-### Features
+# Author
 
-* Fraud detection using machine learning algorithms
-* Data preprocessing and feature scaling
-* Handling class imbalance in transaction data
-* Model evaluation using Confusion Matrix
-* Performance analysis using Classification Report
-* Visualization of fraud detection results
+**Roshan Perera**
 
-### Project Structure
+**Student ID:** S25026203
 
+---
 
+# Acknowledgements
 
-### Dataset
+This project makes use of the following open-source libraries:
 
-The dataset contains historical credit card transactions with features representing transaction characteristics and a target variable indicating whether the transaction is fraudulent (1) or legitimate (0).
+- Scikit-learn
+- Imbalanced-learn
+- Streamlit
+- Pandas
+- NumPy
+- Matplotlib
+- Plotly
+- XGBoost
 
-### Technologies Used
+The project is inspired by the structure of the publicly available Credit Card Fraud Detection dataset originally published on Kaggle.
 
-Python
-Pandas
-NumPy
-Scikit-learn
-Matplotlib
-Seaborn
-Jupyter Notebook / Google Colab
+---
 
-### Evaluation Metrics
+# License
 
-The performance of the fraud detection model is evaluated using:
+This repository has been developed solely for academic purposes as part of an MSc programme.
 
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* Confusion Matrix
-* Classification Report
+It may be used for learning and research with appropriate acknowledgement to the author.
 
-### How to Run
+---
 
-1
-Install dependencies
-Copy
+<div align="center">
 
-2
-Run the project
-Copy
+**FraudShield**
 
-3
-Open the notebook
-Copy
+*Machine Learning for Intelligent Credit Card Fraud Detection*
 
-### Example Output
-
-Metric
-
-Value
-
-Accuracy
-99.8%
-
-Precision
-97.5%
-
-Recall
-94.2%
-
-F1-Score
-95.8%
-
-### Future Improvements
-
-* Deploy the model as a web API
-* Add real-time transaction monitoring
-* Integrate deep learning techniques
-* Implement anomaly detection methods
-* Build an interactive dashboard for fraud analysis
-
-### Author
-
-Roshan Perera
-ID : S25026203
-
-🛡️ “Fraud-Shield — Protecting Every Transaction with Intelligent Detection.”
->>>>>>> 978739c2a8618396bd3c0ed773332c335140f94d
+</div>
