@@ -1,7 +1,9 @@
-"""
-FraudShield Enhanced Streamlit Dashboard
-Professional MSc-level fraud detection system with all advanced features
-"""
+import streamlit as st
+
+st.title("FraudShield 🚀")
+st.success("Streamlit deployment working!")
+
+st.write("If you see this, deployment is OK.")
 
 import os
 import sys
