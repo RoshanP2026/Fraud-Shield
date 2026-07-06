@@ -746,5 +746,3 @@ elif page == "About & Diagnostics":
         st.write("- **Standard Scaler State:** Fitted, cached in `scaler.pkl`")
         st.write("- **Oversampling Toolkit:** imbalanced-learn / SMOTE ready")
         st.write("- **Web Engine:** Streamlit Core")
-        
-        st.info("💡 **Academic Note:** When presenting this assignment, emphasize that splitting the dataset must always occur *prior* to oversampling to prevent test set contamination and optimistic bias in performance metrics.")

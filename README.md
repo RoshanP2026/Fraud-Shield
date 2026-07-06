@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # FraudShield – Credit Card Fraud Detection System
 
 <div align="center">
@@ -68,11 +69,53 @@ The project follows a complete machine learning pipeline consisting of:
 ---
 
 # Project Structure
+=======
+# FraudShield - Advanced Credit Card Fraud Detection System
+
+<div align="center">
+  <h3>MSc Advanced Machine Learning Project</h3>
+  <p>Enterprise-grade real-time fraud detection with Explainable AI and Advanced ML Techniques</p>
+</div>
+
+## 🎯 Overview
+
+FraudShield is a comprehensive, enterprise-grade credit card fraud detection system that addresses the challenge of severe class imbalance in financial transaction data. The system implements state-of-the-art machine learning techniques including multiple algorithms, hyperparameter tuning, explainable AI (SHAP), and comprehensive evaluation metrics optimized for imbalanced datasets.
+
+## ✨ Key Features
+
+### Machine Learning Capabilities
+- **Multiple ML Models**: Logistic Regression, Decision Tree, Random Forest, Balanced Random Forest, XGBoost, LightGBM, Gradient Boosting, Neural Network (MLP)
+- **Hyperparameter Tuning**: GridSearchCV and RandomizedSearchCV with before/after comparison
+- **Class Imbalance Handling**: SMOTE, Random Under Sampling, Balanced Random Forest, Class Weights
+- **Cross-Validation**: 5-fold and 10-fold CV with mean accuracy and standard deviation
+- **Feature Engineering**: Transaction velocity, risk scores, interaction features, time-based features
+
+### Explainable AI
+- **SHAP Integration**: Feature attribution and model interpretability
+- **Individual Prediction Explanations**: Understand why specific transactions are flagged
+- **Summary Plots**: Global feature importance visualization
+- **Dependence Plots**: Feature interaction analysis
+
+### System Features
+- **ML Pipeline**: End-to-end pipeline (Cleaning → Encoding → Scaling → Feature Engineering → Training → Evaluation → Deployment)
+- **Real-time Prediction**: Interactive transaction risk evaluation with scenario templates
+- **Comprehensive Logging**: Prediction logs with timestamps, probabilities, and audit trail
+- **Model Persistence**: joblib/pickle for production-ready model saving/loading
+
+### Visualization & Analytics
+- **Professional Dashboard**: Streamlit-based with multiple tabs (Home, Predict, Analytics, Model Performance, Error Analysis, About)
+- **Advanced Visualizations**: ROC curves, Precision-Recall curves, confusion matrices, correlation heatmaps
+- **Error Analysis**: False positive/negative analysis with explanations
+- **Probability Gauges**: Visual confidence intervals and risk indicators
+
+## 📁 Project Structure
+>>>>>>> Stashed changes
 
 ```
 FraudShield/
 │
 ├── CreditCardFraudDetection/
+<<<<<<< Updated upstream
 │   ├── app.py
 │   ├── train_model.py
 │   ├── utils.py
@@ -216,6 +259,44 @@ Provides project information together with overfitting analysis and diagnostic r
 
 Clone the repository:
 
+=======
+│   ├── app.py                  # Main Streamlit application (original)
+│   ├── app_enhanced.py         # Enhanced Streamlit application with all features
+│   ├── utils.py                # Utility functions for data processing and visualization
+│   ├── train_model.py          # Original ML training pipeline
+│   ├── requirements.txt        # Python dependencies
+│   ├── notebook.ipynb          # Jupyter notebook for analysis
+│   ├── logo.jpg                # Application logo
+│   ├── banner.jpg              # Application banner
+│   ├── favicon.png             # Favicon
+│   ├── model.pkl               # Trained model
+│   └── scaler.pkl              # Fitted scaler
+├── dataset/                    # Dataset directory
+├── models/                     # Saved models directory
+├── images/                     # Images directory
+├── notebooks/                  # Jupyter notebooks directory
+├── saved_models/               # Production-ready saved models
+├── logs/                       # Prediction and audit logs
+├── train.py                    # Advanced training module with multiple models
+├── explainability.py           # SHAP-based explainable AI module
+├── feature_engineering.py      # Advanced feature engineering module
+├── pipeline.py                 # End-to-end ML pipeline module
+├── logger.py                   # Logging and audit trail module
+├── requirements.txt            # Complete dependencies
+├── README.md                   # This file
+├── .gitignore                  # Git ignore rules
+└── install_and_run.sh          # Installation and run script
+```
+
+## 🚀 Installation
+
+### Prerequisites
+- Python 3.10 or higher
+- pip (Python package manager)
+- Git (for cloning the repository)
+
+### Option 1: Using the installation script (Linux/Mac/WSL)
+>>>>>>> Stashed changes
 ```bash
 git clone https://github.com/RoshanP2026/Fraud-Shield.git
 ```
@@ -249,21 +330,38 @@ source venv/bin/activate
 Install the required packages:
 
 ```bash
-pip install -r CreditCardFraudDetection/requirements.txt
+pip install -r requirements.txt
 ```
 
+<<<<<<< Updated upstream
 ---
 
 # Running the Application
 
 Launch the Streamlit application:
 
+=======
+4. **Train models** (optional - will use fallback if not trained)
+```bash
+python train.py
+```
+
+## 🎮 Running the Application
+
+### Enhanced Dashboard (Recommended)
+```bash
+streamlit run CreditCardFraudDetection/app_enhanced.py
+```
+
+### Original Dashboard
+>>>>>>> Stashed changes
 ```bash
 streamlit run CreditCardFraudDetection/app.py
 ```
 
 The application will be available at:
 
+<<<<<<< Updated upstream
 ```
 http://localhost:8501
 ```
@@ -271,13 +369,71 @@ http://localhost:8501
 ---
 
 # Troubleshooting
+=======
+## 📊 Application Pages
+
+### Enhanced Dashboard Pages
+1. **🏠 Home**: System overview, dashboard statistics, and recent activity
+2. **🔮 Predict**: Real-time transaction prediction with SHAP explanations and probability gauges
+3. **📊 Analytics**: Comprehensive EDA with distribution analysis, correlation, and feature separation
+4. **🎯 Model Performance**: ROC curves, PR curves, confusion matrices, and classification reports
+5. **🔬 Error Analysis**: False positive/negative analysis with detailed explanations
+6. **ℹ️ About & Diagnostics**: System architecture, developer profile, and technical specifications
+
+### Training Module Features
+Run `python train.py` to access:
+- Multiple model training with comparison tables
+- Hyperparameter tuning with before/after metrics
+- Class imbalance technique comparison
+- Cross-validation analysis
+- Automatic model saving
+
+## 📈 Dataset
+>>>>>>> Stashed changes
 
 ### Missing Model Files
 
 If the trained model files are unavailable, regenerate them using:
 
+<<<<<<< Updated upstream
+=======
+## 🎯 Model Performance Metrics
+
+The system evaluates models using metrics optimized for imbalanced datasets:
+- **Accuracy**: Overall classification accuracy
+- **Precision**: Minimizes false alarms
+- **Recall**: Maximizes fraud detection
+- **F1-Score**: Harmonic mean of precision and recall
+- **ROC-AUC**: Overall classification performance
+- **Precision-Recall AUC**: Performance on minority class
+
+## 🔬 Academic Context
+
+This project was developed as part of an MSc Advanced Machine Learning curriculum focusing on:
+- Class imbalance handling techniques (SMOTE, undersampling, class weights)
+- Ensemble learning methods (Random Forest, XGBoost, LightGBM)
+- Hyperparameter optimization (GridSearchCV, RandomizedSearchCV)
+- Model explainability (SHAP)
+- Model evaluation in imbalanced scenarios
+- Overfitting detection and prevention
+- Feature engineering for fraud detection
+- End-to-end ML pipeline development
+
+**Important Note**: SMOTE is applied ONLY to the training set to prevent test set contamination and ensure valid performance metrics.
+
+## 👨‍💻 Developer
+
+- **Name**: Roshan Perera
+- **Student ID**: S25026203
+- **Program**: MSc Advanced Machine Learning & Financial Risk Mitigation
+
+## 🛠️ Troubleshooting
+
+### Model files not found
+If you see errors about missing model files:
+>>>>>>> Stashed changes
 ```bash
-python CreditCardFraudDetection/train_model.py
+python train.py
 ```
 
 ---
@@ -287,7 +443,7 @@ python CreditCardFraudDetection/train_model.py
 Run the application on another port:
 
 ```bash
-streamlit run CreditCardFraudDetection/app.py --server.port 8502
+streamlit run CreditCardFraudDetection/app_enhanced.py --server.port 8502
 ```
 
 ---
@@ -298,13 +454,18 @@ Upgrade pip and reinstall the required packages:
 
 ```bash
 pip install --upgrade pip
-pip install -r CreditCardFraudDetection/requirements.txt --force-reinstall
+pip install -r requirements.txt --force-reinstall
 ```
 
+<<<<<<< Updated upstream
 ---
+=======
+## 📝 License
+>>>>>>> Stashed changes
 
 # Future Enhancements
 
+<<<<<<< Updated upstream
 Possible future improvements include:
 
 - Deep learning models for fraud detection
@@ -358,3 +519,20 @@ It may be used for learning and research with appropriate acknowledgement to the
 *Machine Learning for Intelligent Credit Card Fraud Detection*
 
 </div>
+=======
+## 🙏 Acknowledgments
+
+- Kaggle Credit Card Fraud Dataset (original dataset structure reference)
+- scikit-learn, imbalanced-learn, XGBoost, LightGBM, SHAP, and Streamlit communities
+- Open-source ML ecosystem contributors
+
+## 📚 Key Technologies
+
+- **ML Frameworks**: scikit-learn, XGBoost, LightGBM, PyTorch
+- **Data Processing**: pandas, numpy
+- **Explainability**: SHAP
+- **Visualization**: plotly, matplotlib, seaborn
+- **Web Framework**: Streamlit
+- **Imbalance Handling**: imbalanced-learn (SMOTE)
+- **Optimization**: Optuna, scikit-optimize
+>>>>>>> Stashed changes
