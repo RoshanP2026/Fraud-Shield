@@ -1,32 +1,10 @@
-# Core ML/Data Science
-pandas>=2.0.0
-numpy>=1.24.0
-scikit-learn>=1.3.0
-joblib>=1.3.0
-
-# ML Models
-xgboost>=2.0.0
-lightgbm>=4.0.0
-catboost>=1.2.0
-imbalanced-learn>=0.11.0
-
-# Explainable AI
-shap>=0.43.0
-
-# Hyperparameter Tuning
-optuna>=3.4.0
-
-# Deep Learning
-torch>=2.0.0
-torchvision>=0.15.0
-
-# Visualization
-plotly>=5.17.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-
-# Web Framework
-streamlit>=1.28.0
-
-# Utilities
-tqdm>=4.66.0
+scikit-learn>=1.2.0
+pandas>=1.5.0
+numpy>=1.22.0
+matplotlib>=3.6.0
+plotly>=5.10.0
+streamlit>=1.20.0
+joblib>=1.2.0
+xgboost>=1.7.0
+imbalanced-learn>=0.10.0
+jinja2>=3.1.2
